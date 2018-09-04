@@ -11,6 +11,7 @@ function grouping_count(collection) {
       map[s] = 1;
     }
   }
+  return map;
   // return collection.reduce((m, x) => m.set(x, (m.get(x) || 0) + 1), new Map());
 }
 
