@@ -1,16 +1,13 @@
 function count_same_elements(collection) {
-  var map = {};
-  for(var i = 0;i<collection.length;i++){
-    var s = collection[i];
-    var r = map[s];
-    if(r){
-      map[s] +=1;
-    }else{
-      map[s] = 1;
-    }
-  }
+  var result = [];
 
-  return map;
+  collection.forEach(item => {
+    if (!result.find(element => element.key === item))
+      result.push({key: item, count: collection.filter(element => element === item).length});
+
+  });
+
+  return result;
 
 }
 

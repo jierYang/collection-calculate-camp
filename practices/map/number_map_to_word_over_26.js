@@ -7,7 +7,7 @@ function intToChar(numberChar){
   var decade = numberChar/26;
   var unit = numberChar%26;
   var result="";
-  if(decade>0){
+  if(decade>1){
     result+=String.fromCharCode(decade+0x60);
   }
   if(unit>0){

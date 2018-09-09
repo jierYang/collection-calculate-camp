@@ -2,7 +2,7 @@
 
 var find_last_even = require('../../practices/reduce/find_last_even.js');
 
-ddescribe('find_last_even', function() {
+describe('find_last_even', function() {
 
   var collection = [1,11,27,20,4,9,15];
 
